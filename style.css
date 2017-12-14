@@ -120,7 +120,6 @@ section {
 	border-right: solid 0.5px rgba(255,255,255,0.5);
 }
 .bold{
-	font-size: 1.15em;
 	text-shadow: 0 0 15px rgba(0,0,0,0.1);
 	color: rgba(5,5,5,0.5);
 }
@@ -164,7 +163,6 @@ p.titulo {
 }
 
 p.cuerpo {
-	font-size: 18px;
 	text-align: justify;
 }
 
@@ -175,6 +173,9 @@ p.cuerpo {
 	p.cuerpo {
 		font-size: 1em;
 	}
+	.bold {
+		font-size: 1em;
+	}
 }
 
 @media (min-width: 600px) {
@@ -182,6 +183,9 @@ p.cuerpo {
 		font-size: 2em;
 	}
 	p.cuerpo {
+		font-size: 1.2em;
+	}
+	.bold {
 		font-size: 1.2em;
 	}
 }
