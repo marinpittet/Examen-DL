@@ -1,0 +1,298 @@
+/* General
+-------------------- */
+body {
+	background: linear-gradient(to right, #99C131, #DDDB2F, #99C131);
+	font-family: 'Rubik', sans-serif;
+}
+/* Fin General
+-------------------- */
+
+
+
+/* Header
+-------------------- */
+.header-bg {
+	height: 80vh;
+	width: 100%;
+	background-color: #000;
+}
+
+.parallax-bg {
+	background-image: url(images/portada2.jpg);
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;	
+	background-position: 50% 50%;	
+}
+/* Hero y sus derivaciones responden al encabezado general del header
+--------------------- */
+.hero-t {
+	padding-top: 35vh;
+}
+
+.hero {
+	color: rgba(255,255,255,0.8);
+	text-align: center;
+}
+
+h1.hero,
+h3.hero {
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.9), 0 0 3px rgba(0,0,0,0.8);
+	font-family: 'Catamaran', sans-serif;
+	/*font-family: 'Rubik', sans-serif;*/
+}
+/* Fin Header
+-------------------- */
+
+
+/* nav-bar
+-------------------- */
+#navbar {
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.05));
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;	
+	padding-bottom: 0;
+}
+
+.right {
+	float: right;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background: linear-gradient(to right, #DDDB2F, #99C131);
+	color: #fff;
+	text-shadow: 1px 1px 5px rgba(0,0,0,.9);
+	padding-bottom: 20px;
+	border-radius: 0px 0px 5px 5px;
+}
+.navbar-default .navbar-nav {
+	height: 55px;
+}
+
+.navbar {
+	position: relative;
+}
+
+.navbar-brand {
+	position: absolute;
+	left: 50%;
+	transform:translateX(-50%);
+	display: block;
+	padding-top: 2px;
+	margin-top: 0;
+}
+
+a.navbar-brand > img.logo:hover {
+	box-shadow: 0 0 8px 2px #DDDB2F, 0 0 8px 3px #DDDB2F inset;
+} 
+
+div#myNavbar.navbar-collapse.collapse.in {
+	height: 100px;
+}
+
+.logo {
+	max-height: 50px;
+}
+
+
+/* Fin nav-bar
+-------------------- */
+
+
+/* sección información personal
+-------------------- */
+article.sobremi,
+article.resumen {
+	background-color: #99C131;
+}
+section {
+	height: 100vh;
+}
+
+.sobremi {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	border-right: solid 0.5px rgba(255,255,255,0.5);
+}
+.bold{
+	font-size: 1.15em;
+	text-shadow: 0 0 15px rgba(0,0,0,0.1);
+	color: rgba(5,5,5,0.5);
+}
+
+.resumen {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	border-left: solid 0.5px rgba(255,255,255,0.5);
+}
+.resumen:hover,
+.sobremi:hover {
+	background-color: rgba(154, 192, 62, 0.8);
+}
+/* Fin sección información personal
+-------------------- */
+
+/* Articulos
+-------------------- */
+.text-box {
+	padding: 50px;
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+p {
+	color: #f5f5f5;
+	text-align: center;
+}
+
+p.titulo {
+	padding-top: 5%;
+	padding-bottom: 10%;	
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.5), 0 0 3px rgba(0,0,0,0.3);
+}
+
+p.cuerpo {
+	font-size: 18px;
+	text-align: justify;
+}
+
+@media (min-width: 300px) {
+	p.titulo {
+		font-size: 1.5em;
+	}
+	p.cuerpo {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 600px) {
+	p.titulo {
+		font-size: 2em;
+	}
+	p.cuerpo {
+		font-size: 1.2em;
+	}
+}
+
+
+/* Resumen (skills)
+-------------------- */
+.skills {
+	margin-top: 75px;
+}
+
+.skills-title {
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.5), 0 0 3px rgba(0,0,0,0.3);
+	font-size: 2em;
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:rgba(5,5,5,0.2);
+	height:24px;
+	border-radius:3px;
+	border: solid rgba(5,5,5,0.1) 2px;
+	box-sizing: border-box;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+    width:110px;
+	font-weight:bold;
+	font-size: 1em;
+	color:rgba(0,0,0,0.7);
+	background:#99C131;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.02);
+	padding:0 20px;
+	height:20px;
+	line-height:20px;
+}
+
+.skillbar-bar {
+	height:20px;
+	width:0px;
+	background:linear-gradient(to right, #DDDB2F, #99C131);
+	border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:20px;
+	line-height:20px;
+	color:rgba(255, 255, 255, 0.6);
+}
+/* Fin Resumen (skills)
+-------------------- */
+/* Fin Articulos
+-------------------- */
+
+
+/* Footer
+-------------------- */
+.footer {
+	display: block;
+	margin-bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 300px;
+	background: linear-gradient(to top, rgba(202,210,74,.2), rgba(0,0,0,0.05));
+}
+
+/* Footer
+-------------------- */
+
+/* toTop button
+-------------------- */
+#toTop {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color:rgba(255,255,255,0.5);
+	color: #99C131;
+	cursor: pointer;
+	padding: 1.5% 2%;
+	border-radius: 5%;
+}
+
+@media (min-width: 600px) {
+	#toTop {
+		font-size: 1.5em;
+		padding: .6% .8%;
+	}
+}
+
+#toTop:hover{
+	background-color: #DDDB2F;
+	color: #fff;
+	font-weight: 800;	
+}
