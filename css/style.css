@@ -18,7 +18,7 @@ body {
 }
 
 .parallax-bg {
-	background-image: url(images/portada2.jpg);
+	background-image: url(../images/portada2.jpg);
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;	
@@ -109,9 +109,6 @@ article.sobremi,
 article.resumen {
 	background-color: #99C131;
 }
-section {
-	height: 100vh;
-}
 
 .sobremi {
 	height: 100vh;
@@ -137,11 +134,11 @@ section {
 /* Fin sección información personal
 -------------------- */
 
-/* Articulos
+/* Articulos titulos y parrafos
 -------------------- */
 .text-box {
 	padding: 50px;
-	max-height: 100vh;
+	height: 100vh;
 	overflow-y: scroll;
 }
 
@@ -264,7 +261,7 @@ p.cuerpo {
 	margin-bottom: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
-	height: 300px;
+	height: 30vh;
 	background: linear-gradient(to top, rgba(202,210,74,.2), rgba(0,0,0,0.05));
 }
 
