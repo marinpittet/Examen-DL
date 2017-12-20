@@ -1,0 +1,207 @@
+/* General
+-------------------- */
+body {
+	background-color: #F14634;
+	font-family: 'Rubik', sans-serif;
+}
+/* Fin General
+-------------------- */
+
+/* Header
+-------------------- */
+.header-bg {
+	height: 30vh;
+	width: 100%;
+	background-color: #F14634;
+}
+
+.parallax-bg {
+	background-image: url(../images/portada_portafolio.jpg);
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;	
+	background-position: 50% 50%;
+	opacity: 0;	
+}
+
+/* Hero y sus derivaciones responden al encabezado general del header
+--------------------- */
+.hero-t {
+	padding-top: 11vh;
+}
+
+.hero-t .hero {
+	color: rgba(255,255,255,0.8);
+	text-align: center;
+}
+
+.hero-t h1.hero,
+.hero-t h3.hero {
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.9), 0 0 3px rgba(0,0,0,0.8);
+	font-family: 'Catamaran', sans-serif;
+	/*font-family: 'Rubik', sans-serif;*/
+}
+/* Fin Header
+-------------------- */
+
+/* nav-bar
+-------------------- */
+#navbar {
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.05));
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;	
+	padding-bottom: 0;
+}
+
+.right {
+	float: right;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background: linear-gradient(to right, #DDDB2F, #99C131);
+	color: #fff;
+	text-shadow: 1px 1px 5px rgba(0,0,0,.9);
+	padding-bottom: 20px;
+	border-radius: 0px 0px 5px 5px;
+}
+.navbar-default .navbar-nav {
+	height: 55px;
+}
+
+.navbar {
+	position: relative;
+}
+
+.navbar-brand {
+	position: absolute;
+	left: 50%;
+	transform:translateX(-50%);
+	display: block;
+	padding-top: 2px;
+	margin-top: 0;
+}
+
+a.navbar-brand > img.logo:hover {
+	box-shadow: 0 0 8px 2px #DDDB2F, 0 0 8px 3px #DDDB2F inset;
+} 
+
+div#myNavbar.navbar-collapse.collapse.in {
+	height: 100px;
+}
+
+.logo {
+	max-height: 50px;
+}
+
+
+/* Fin nav-bar
+-------------------- */
+
+/* Thumbnail section
+-------------------- */
+.thumbnail {
+	background: linear-gradient(to bottom, #000, #F14634);
+	border-radius: 10px 10px 0px 0px;
+	border: none;
+	height: 100vh;
+	margin: 0;
+}
+
+/* Fin Thumbnail section
+-------------------- */
+
+/* Footer
+-------------------- */
+.footer {
+	display: block;
+	margin-bottom: 0;
+	width: 100%;
+	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.9));
+}
+
+.logo-footer {
+	max-height: 50PX;
+	margin-top: 5px;
+}
+
+.footer-name {
+	padding-top: 5px;
+	text-align: left;
+	color: rgba(255,255,255,.8);
+	letter-spacing: .3em;
+	max-width: 100%;
+}
+
+.footer-mail {
+	padding-top: 5px;
+	text-align: left;
+	color: #99C131;
+}
+
+@media (min-width: 300px) {
+	.footer-name {
+		font-size: 1em;
+		padding-left: 40px;
+		margin-top: 5px;
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 600px) {
+	.footer-name {
+		font-size: 1em;
+		padding-left: 40px;
+		margin-top: 5px;
+		margin-left: -30px;
+	}
+}
+
+.link-icon {
+	float: right;
+}
+
+.fab {
+	color: #99C131;
+	line-height: 50px;
+	margin-top: 8px;
+}
+
+.fa-behance-square {
+	margin-right: -5px;
+}
+/* Footer
+-------------------- */
+
+/* toTop button
+-------------------- */
+#toTop {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color:rgba(255,255,255,0.5);
+	color: #F14634;
+	cursor: pointer;
+	padding: 1.5% 2%;
+	border-radius: 5%;
+}
+
+@media (min-width: 600px) {
+	#toTop {
+		font-size: 1.5em;
+		padding: .6% .8%;
+	}
+}
+
+#toTop:hover{
+	background-color: #F14634;
+	color: #fff;
+	font-weight: 800;	
+}

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('.parallax-bg').fadeTo(2500, 1);
 /* parallax background image
 ----------------------------- */
 	$(window).scroll(function() {
@@ -8,28 +9,57 @@ $(document).ready(function(){
 	function parallax() {
 		var wScroll = $(window).scrollTop();
 
-		$('.parallax-bg').css('background-position', '50%'+(50-(wScroll*.7))+'%')
+		$('.parallax-bg').css('background-position', '50%'+(50-(wScroll*.3))+'%')
+		$('.personal').fadeTo(500, 1);
 	}
 /* fin parallax background image
 ----------------------------- */
 
+/* Animations on button click
+----------------------------- */
+	$(window).ready(function(){
+		if ($(window).scrollTop() > 200) {
+			$('.personal').fadeTo(500, 1);
+		
+		$('.skillbar').each(function(){
+				$(this).find('.skillbar-bar').animate({
+					width:$(this).attr('data-percent')
+				},3000);
+			});
+			$('#block-e1').fadeTo(1500, 1);
+			$('#block1').fadeTo(1000, 1, function() {
+				$('#block2').fadeTo(1000, 1, function() {
+					$('#block-e2').fadeTo(1500, 1);
+					$('#block3').fadeTo(900, 1, function() {
+						$('#block4').fadeTo(900, 1, function(){
+							$('#block5').fadeTo(800, 1);
+						});
+					});
+				});
+			});
+		}
+	});
+
+/* Fin Animations on button click
+----------------------------- */
+
 /* Skill bars and Educacion Blocks animation 
 ----------------------------- */
-// When the user scrolls down 300px from the top of the window, start the animation of te skillbar and block div
+// When the user scrolls down 150px from the top of the window, start the animation of te skillbar and block div
 	$(window).scroll(function(){
-		if ($(window).scrollTop() > 300) {
+		if ($(window).scrollTop() > 150) {
 			$('.skillbar').each(function(){
 				$(this).find('.skillbar-bar').animate({
 					width:$(this).attr('data-percent')
 				},3000);
 			});
-			$('#block-e1').fadeTo(1000, 1);
-			$('#block1').fadeTo(1200, 1, function() {
-				$('#block-e2').fadeTo(1000, 1);
-				$('#block2').fadeTo(1100, 1, function() {
-					$('#block3').fadeTo(1000, 1, function() {
+			$('#block-e1').fadeTo(1500, 1);
+			$('#block1').fadeTo(1000, 1, function() {
+				$('#block2').fadeTo(1000, 1, function() {
+					$('#block-e2').fadeTo(1500, 1);
+					$('#block3').fadeTo(900, 1, function() {
 						$('#block4').fadeTo(900, 1, function(){
-							$('#block5').fadeTo(900, 1);
+							$('#block5').fadeTo(800, 1);
 						});
 					});
 				});

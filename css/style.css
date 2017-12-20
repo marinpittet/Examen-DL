@@ -1,35 +1,31 @@
 /* General
 -------------------- */
 body {
-	background: linear-gradient(to right, #99C131, #DDDB2F, #99C131);
+	background: linear-gradient(to bottom, #000, #000, #99C131);
 	font-family: 'Rubik', sans-serif;
 }
 /* Fin General
 -------------------- */
 
-
-
 /* Header
 -------------------- */
 .header-bg {
-	height: 80vh;
 	width: 100%;
 	background-color: #000;
 }
 
 .parallax-bg {
-	background-image: url(../images/portada2.jpg);
+	background-image: url(../images/portada.jpg);
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;	
 	background-position: 50% 50%;	
-}
-/* Hero y sus derivaciones responden al encabezado general del header
---------------------- */
-.hero-t {
-	padding-top: 35vh;
+	opacity: 0;
 }
 
+
+/* Hero y sus derivaciones responden al encabezado general del header
+--------------------- */
 .hero-t .hero {
 	color: rgba(255,255,255,0.8);
 	text-align: center;
@@ -45,7 +41,6 @@ body {
 }
 /* Fin Header
 -------------------- */
-
 
 /* nav-bar
 -------------------- */
@@ -102,34 +97,28 @@ div#myNavbar.navbar-collapse.collapse.in {
 /* Fin nav-bar
 -------------------- */
 
-
 /* sección información personal
 -------------------- */
+.personal{
+	opacity: 0.8;
+}
+
 article.sobremi,
 article.resumen {
 	background-color: #99C131;
-}
-
-.sobremi {
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-	border-right: solid 0.5px rgba(255,255,255,0.5);
 }
+
 .bold{
 	text-shadow: 0 0 15px rgba(0,0,0,0.1);
 	color: rgba(5,5,5,0.5);
 }
 
-.resumen {
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	border-left: solid 0.5px rgba(255,255,255,0.5);
-}
 .resumen:hover,
 .sobremi:hover {
-	background-color: rgba(154, 192, 62, 0.8);
+	background-color: rgba(153, 193, 49, .9);
 }
 /* Fin sección información personal
 -------------------- */
@@ -138,11 +127,11 @@ article.resumen {
 -------------------- */
 .text-box {
 	padding: 50px;
-	height: 100vh;
+	height: 100%;
 	overflow-y: scroll;
 }
 
-::-webkit-scrollbar {
+.text-box::-webkit-scrollbar {
 	display: none;
 }
 
@@ -192,8 +181,8 @@ div.fecha {
 	position:absolute;
 	top:0;
 	left:0;
-    width:70px;
-    height: 100%;
+	width:70px;
+	height: 100%;
 	background:rgba(0,0,0,0.4);
 }
 
@@ -232,6 +221,24 @@ div.fecha {
 	.bold {
 		font-size: 1.1em;
 	}
+	article.sobremi,
+	article.resumen {
+		border: none;
+	}
+	article.sobremi{
+		border-radius: 10px 10px 0px 0px;
+		height: 200vh;
+	}
+	article.resumen{
+		border-radius: 0px;
+		height: 190vh;
+	}
+	.header-bg {
+		height: 100vh;
+	}
+	.hero-t {
+		padding-top: 40vh;
+	}
 }
 
 @media (min-width: 600px) {
@@ -246,6 +253,57 @@ div.fecha {
 	}
 	.bold {
 		font-size: 1.3em;
+	}
+	article.sobremi,
+	article.resumen {
+		border: none;
+	}
+	article.sobremi{
+		border-radius: 10px 10px 0px 0px;
+		height: 135vh;
+	}
+	article.resumen{
+		border-radius: 0px;
+		height: 125vh;
+	}
+	.header-bg {
+		height: 50vh;
+	}
+	.hero-t {
+		padding-top: 22vh;
+	}
+}
+
+@media (min-width: 800px) {
+	p.titulo {
+		font-size: 2em;
+	}
+	p.sub-title {
+		font-size: 1.8em;
+	}
+	p.cuerpo {
+		font-size: 1.2em;
+	}
+	.bold {
+		font-size: 1.3em;
+	}
+	article.sobremi,
+	article.resumen {
+		height: 100vh;
+	}
+	article.sobremi{
+		border-radius: 10px 0px 0px 0px;
+		border-right: solid 0.5px rgba(255,255,255,0.5);
+	}
+	article.resumen{
+		border-radius: 0px 10px 0px 0px;
+		border-left: solid 0.5px rgba(255,255,255,0.5);
+	}
+	.header-bg {
+		height: 50vh;
+	}
+	.hero-t {
+		padding-top: 22vh;
 	}
 }
 
@@ -268,7 +326,7 @@ div.fecha {
 	position:absolute;
 	top:0;
 	left:0;
-    width:110px;
+	width:110px;
 	font-weight:bold;
 	font-size: 1em;
 	color:rgba(0,0,0,0.7);
@@ -311,7 +369,6 @@ div.fecha {
 	display: block;
 	margin-bottom: 0;
 	width: 100%;
-	/* Set the fixed height of the footer here */
 	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.9));
 }
 
