@@ -13,16 +13,27 @@ $(document).ready(function(){
 /* fin parallax background image
 ----------------------------- */
 
-/* Skill bars animation
+/* Skill bars and Educacion Blocks animation 
 ----------------------------- */
-// When the user scrolls down 300px from the top of the window, start the animation of te skillbar
+// When the user scrolls down 300px from the top of the window, start the animation of te skillbar and block div
 	$(window).scroll(function(){
 		if ($(window).scrollTop() > 300) {
-		$('.skillbar').each(function(){
-			$(this).find('.skillbar-bar').animate({
-				width:$(this).attr('data-percent')
-			},3000);
-		});
+			$('.skillbar').each(function(){
+				$(this).find('.skillbar-bar').animate({
+					width:$(this).attr('data-percent')
+				},3000);
+			});
+			$('#block-e1').fadeTo(1000, 1);
+			$('#block1').fadeTo(1200, 1, function() {
+				$('#block-e2').fadeTo(1000, 1);
+				$('#block2').fadeTo(1100, 1, function() {
+					$('#block3').fadeTo(1000, 1, function() {
+						$('#block4').fadeTo(900, 1, function(){
+							$('#block5').fadeTo(900, 1);
+						});
+					});
+				});
+			});
 		}
 	});
 /* Fin Skill bars animation
