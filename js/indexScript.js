@@ -43,7 +43,7 @@ $(document).ready(function(){
 /* Fin Animations on button click
 ----------------------------- */
 
-/* Skill bars and Educacion Blocks animation 
+/* Skill bars and Educacion Blocks animation, also change the color of the navbar depending to the scrollTop 
 ----------------------------- */
 // When the user scrolls down 150px from the top of the window, start the animation of te skillbar and block div
 	$(window).scroll(function(){

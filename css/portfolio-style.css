@@ -107,18 +107,54 @@ div#myNavbar.navbar-collapse.collapse.in {
 	background: linear-gradient(to bottom, #000, #F14634);
 	border-radius: 10px 10px 0px 0px;
 	border: none;
-	height: 100vh;
-	padding: 50px;	
+	height: 100%;
+	padding: 5%;	
 }
-.thumbnail {
-	display: inline-block;
-	margin-top: 20px;
-	margin-left: 5px;
-	margin-right: 5px;
-}
+
 .caption {
 	text-align: center;
 }
+
+.grid {
+	max-width: 1170px;
+}
+
+/* clearfix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* ---- grid-item media querys ---- */
+.grid-sizer,
+.grid-item { 
+		width: 100%; 
+	}
+
+@media (min-width: 600px) {
+	.grid-sizer,
+	.grid-item { 
+		width: 30%; 
+	}
+
+	.gutter-sizer {
+	width: 5%;
+	}
+}
+
+@media (min-width: 900px) {
+	.grid-sizer,
+	.grid-item { 
+		width: 24%; 
+	}
+
+	.gutter-sizer {
+	width: 1.2%;
+	}
+}
+
+
 
 /* Fin Thumbnail section
 -------------------- */
