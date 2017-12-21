@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>M1 Diseño by Andrés Marín | Portafolio</title>
+	<title>M1 Diseño by Andrés Marín | Contacto</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -12,7 +12,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Catamaran|Rubik:300" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/portfolio-style.css">
+	<link rel="stylesheet" href="css/contact-style.css">
 
 	<!-- font awesome CDN -->
 	<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 		<!-- imagen cover con parallax -->
 		<div class="parallax-bg">
 			<div class="container hero-t">
-				<h1 class="hero">Portafolio</h1>
+				<h1 class="hero">Contacto</h1>
 				<h3 class="hero">Andrés Marín Pittet</h3>
 			</div>
 		</div>
@@ -64,32 +64,29 @@
 		</div>
 	</nav>
 
-	<div class="container">
-		<section class="thumbnails">
-			
-				<div class="col-lg-3 col-md-3">
-					<div class="thumbnail">
-						<img src="images/ejemplo-01.png" alt="imagen de ejemplo">
-						<div class="caption">
-							<h3>API Rest</h3>
-							<p>página demostrativa de la implementación de API</p>
-							<p><a href="#" class="btn btn-primary" role="button">Ver el ejemplo</a></p>
-						</div>
-					</div>
+	<div class="formulario">
+		<form class="container">
+			<div class="row">
+				<div class="col-md-4 mb-3">
+					<label for="validationDefault01">Nombre completo</label>
+					<input type="text" class="form-control" id="validationDefault01" placeholder="Escribe aquí tu nombre" required>
 				</div>
-
-				<div class="col-lg-3 col-md-3">
-					<div class="thumbnail">
-						<img src="http://www.bettawood.com.au/images/media-aug-2016/placeholder_img.jpg" alt="imagen de ejemplo">
-						<div class="caption">
-							<h3>API Rest</h3>
-							<p>página demostrativa de la implementación de API</p>
-							<p><a href="#" class="btn btn-primary" role="button">Ver el ejemplo</a></p>
-						</div>
-					</div>
+				<div class="col-md-4 mb-3">
+					<label for="exampleFormControlInput1">Email</label>
+					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
 				</div>
+				<div class="col-md-4 mb-3">
+					<label for="validationDefault02">Asunto</label>
+					<input type="text" class="form-control" id="validationDefault02" placeholder="Escribe aquí el asunto" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="exampleFormControlTextarea1">Mensaje</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+			</div>
 
-		</section>
+			<button class="btn btn-primary" type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+		</form>
 	</div>
 	
 	<fotter class="footer">

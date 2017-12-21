@@ -1,7 +1,7 @@
 /* General
 -------------------- */
 body {
-	background-color: #F14634;
+	background-color: #009eb4;
 	font-family: 'Rubik', sans-serif;
 }
 /* Fin General
@@ -10,13 +10,13 @@ body {
 /* Header
 -------------------- */
 .header-bg {
-	height: 30vh;
+	height: 50vh;
 	width: 100%;
-	background-color: #F14634;
+	background-color: #009eb4;
 }
 
 .parallax-bg {
-	background-image: url(../images/portada_portafolio.jpg);
+	background-image: url(../images/contacto.jpg);
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;	
@@ -27,7 +27,7 @@ body {
 /* Hero y sus derivaciones responden al encabezado general del header
 --------------------- */
 .hero-t {
-	padding-top: 11vh;
+	padding-top: 20vh;
 }
 
 .hero-t .hero {
@@ -101,26 +101,20 @@ div#myNavbar.navbar-collapse.collapse.in {
 /* Fin nav-bar
 -------------------- */
 
-/* Thumbnail section
+/* Formulario
 -------------------- */
-.thumbnails {
-	background: linear-gradient(to bottom, #000, #F14634);
-	border-radius: 10px 10px 0px 0px;
-	border: none;
-	height: 100vh;
-	padding: 50px;	
+.formulario {
+	background-color: #fff;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
-.thumbnail {
-	display: inline-block;
-	margin-top: 20px;
-	margin-left: 5px;
-	margin-right: 5px;
-}
-.caption {
-	text-align: center;
+button.btn {
+	background: linear-gradient(to bottom, #DDDB2F, #99C131);
+	border: solid 1px #99C131;
 }
 
-/* Fin Thumbnail section
+
+/* Fin formulario
 -------------------- */
 
 /* Footer
@@ -196,7 +190,7 @@ div#myNavbar.navbar-collapse.collapse.in {
 	border: none;
 	outline: none;
 	background-color:rgba(255,255,255,0.5);
-	color: #F14634;
+	color: #009eb4;
 	cursor: pointer;
 	padding: 1.5% 2%;
 	border-radius: 5%;
@@ -210,7 +204,7 @@ div#myNavbar.navbar-collapse.collapse.in {
 }
 
 #toTop:hover{
-	background-color: #F14634;
+	background-color: #009eb4;
 	color: #fff;
 	font-weight: 800;	
 }

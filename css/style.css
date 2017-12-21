@@ -226,12 +226,12 @@ div.fecha {
 		border: none;
 	}
 	article.sobremi{
-		background: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,255,255,0.9));
+		background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,1));
 		border-radius: 10px 10px 0px 0px;
 		height: 200vh;
 	}
 	article.resumen{
-		background: linear-gradient(to left, rgba(255,255,255,0.7), rgba(255,255,255,0.9));
+		background: linear-gradient(to left, rgba(255,255,255,0.8), rgba(255,255,255,1));
 		border-radius: 0px;
 		height: 190vh;
 	}
@@ -277,18 +277,6 @@ div.fecha {
 }
 
 @media (min-width: 800px) {
-	p.titulo {
-		font-size: 2em;
-	}
-	p.sub-title {
-		font-size: 1.8em;
-	}
-	p.cuerpo {
-		font-size: 1.2em;
-	}
-	.bold {
-		font-size: 1.3em;
-	}
 	article.sobremi,
 	article.resumen {
 		height: 100vh;
