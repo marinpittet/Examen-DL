@@ -1,7 +1,7 @@
 /* General
 -------------------- */
 body {
-	background: linear-gradient(to bottom, #000, #000, #99C131);
+	background: linear-gradient(to bottom, #86c30e, #86c30e, #99C131);
 	font-family: 'Rubik', sans-serif;
 }
 /* Fin General
@@ -11,11 +11,11 @@ body {
 -------------------- */
 .header-bg {
 	width: 100%;
-	background-color: #000;
+	background-color: #86c30e;
 }
 
 .parallax-bg {
-	background-image: url(../images/portada.jpg);
+	background-image: url(../images/portada2.jpg);
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;	
@@ -105,15 +105,14 @@ div#myNavbar.navbar-collapse.collapse.in {
 
 article.sobremi,
 article.resumen {
-	background-color: #99C131;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
 }
 
 .bold{
-	text-shadow: 0 0 15px rgba(0,0,0,0.1);
-	color: rgba(5,5,5,0.5);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	color: rgba(153, 193, 49, .9);
 }
 
 .resumen:hover,
@@ -141,7 +140,7 @@ article.resumen {
 }
 
 p {
-	color: #f5f5f5;
+	color: #fff;
 	text-align: center;
 }
 
@@ -154,6 +153,7 @@ p.titulo {
 }
 
 p.cuerpo {
+	color: rgba(0,0,0,0.8);
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: justify;
@@ -226,10 +226,12 @@ div.fecha {
 		border: none;
 	}
 	article.sobremi{
+		background: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,255,255,0.9));
 		border-radius: 10px 10px 0px 0px;
 		height: 200vh;
 	}
 	article.resumen{
+		background: linear-gradient(to left, rgba(255,255,255,0.7), rgba(255,255,255,0.9));
 		border-radius: 0px;
 		height: 190vh;
 	}
@@ -293,11 +295,11 @@ div.fecha {
 	}
 	article.sobremi{
 		border-radius: 10px 0px 0px 0px;
-		border-right: solid 0.5px rgba(255,255,255,0.5);
+		border-right: solid 0.5px rgba(153, 193, 49, .9);
 	}
 	article.resumen{
 		border-radius: 0px 10px 0px 0px;
-		border-left: solid 0.5px rgba(255,255,255,0.5);
+		border-left: solid 0.5px rgba(153, 193, 49, .9);
 	}
 	.header-bg {
 		height: 50vh;
