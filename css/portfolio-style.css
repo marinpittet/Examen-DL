@@ -111,8 +111,14 @@ div#myNavbar.navbar-collapse.collapse.in {
 	padding: 5%;	
 }
 
-.caption {
+.caption p,
+.caption h4{
 	text-align: center;
+}
+
+.caption a.btn {
+	background: linear-gradient(to bottom, #DDDB2F, #99C131);
+	border: solid 1px #99C131;
 }
 
 .grid {

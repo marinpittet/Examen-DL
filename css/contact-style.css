@@ -107,8 +107,9 @@ div#myNavbar.navbar-collapse.collapse.in {
 	background-color: #fff;
 	padding-top: 70px;
 	padding-bottom: 70px;
+	margin-bottom: 150px;
 }
-button.btn {
+.formulario button.btn {
 	background: linear-gradient(to bottom, #DDDB2F, #99C131);
 	border: solid 1px #99C131;
 }

@@ -19,7 +19,7 @@ $(document).ready(function(){
 ----------------------------- */
 // When the user scrolls down 300px from the top of the window, the navbar goes black, else is transparent
 	$(window).scroll(function(){
-		if ($(window).scrollTop() > 300) {
+		if ($(window).scrollTop() > 100) {
 			$('#navbar').css({
 				background: 'linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8))'
 			});
